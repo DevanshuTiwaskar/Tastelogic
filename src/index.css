@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+/* Base mobile styles (default) */
+body {
+  font-size: 16px;
+  padding: 16px;
+  max-width: 100%;
+}
+
+/* Small phones (up to 320px wide like iPhone SE) */
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Mid-range phones (361px – 480px) */
+@media (min-width: 361px) and (max-width: 480px) {
+  body {
+    font-size: 15px;
+    padding: 14px;
+  }
+}
+
+/* Large phones and small tablets (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
