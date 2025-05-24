@@ -1,14 +1,19 @@
+import { useLocation } from "react-router-dom";
 import MainRoutes from "./routes/Mainroutes";
 import Nav from "./components/Nav";
-import GetStart from "./pages/GetStart";
+
 const App = () => {
-    return (
-        <div>
-            {/* <Nav /> */}
-            {/* <MainRoutes /> */}
-            <GetStart/>
-        </div>
-    );
+  const location = useLocation();
+
+  //  hide Nav on this page
+   const hideNavOnPaths = ["/", "/login", "/signup"];
+
+  return (
+    <div>
+      {!hideNavOnPaths.includes(location.pathname) && <Nav />}
+      <MainRoutes />
+    </div>
+  );
 };
 
 export default App;

@@ -5,7 +5,7 @@ const Nav = () => {
         <div>
             <NavLink
                 className={(e) => (e.isActive ? "text-red-400" : "")}
-                to="/"
+                to="/home"
             >
                 Home
             </NavLink>
