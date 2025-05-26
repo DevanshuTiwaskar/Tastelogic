@@ -12,7 +12,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
  
 
-
+ 
 const MainRoutes = () => {
     return (
         <Routes>

@@ -15,9 +15,10 @@ const handleSignUp = () => navigate("/signup");
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden relative flex flex-col items-center justify-between">
+      
       <img
         src="/getStartPhoto.jpg"
-        className="absolute left-[10%] w-[80%] h-[54%] object-cover mt-5"
+        className="absolute z-[9] left-[10%] w-[80%] h-[54%] object-cover mt-5"
         alt="Delicious dish"
       />
 
@@ -31,6 +32,7 @@ const handleSignUp = () => navigate("/signup");
           <h1>Cooking</h1>
         </div>
 
+
         <div className="text-2xl text-black flex gap-5 mt-4 font-semibold">
           <button
             className="bg-[#FFCE5D] px-12 py-6 border-[3px] border-black rounded-full shadow transition duration-300 hover:bg-[#e6b94d]"
@@ -38,6 +40,7 @@ const handleSignUp = () => navigate("/signup");
           >
             Login
           </button>
+
           <button
             className="bg-[#32ae94] px-12 py-6 border-[3px] border-black rounded-full shadow transition duration-300 hover:bg-[#2a957f]"
             onClick={handleSignUp}
